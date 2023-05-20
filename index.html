@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="city-image">
+  <div class="app">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for your city..." />
+      <button class="button">
+        <svg fill="#000000" width="30" height="30" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="bell">
+          <path
+            d="M12.027 9.92L16 13.95 14 16l-4.075-3.976A6.465 6.465 0 0 1 6.5 13C2.91 13 0 10.083 0 6.5 0 2.91 2.917 0 6.5 0 10.09 0 13 2.917 13 6.5a6.463 6.463 0 0 1-.973 3.42zM1.997 6.452c0 2.48 2.014 4.5 4.5 4.5 2.48 0 4.5-2.015 4.5-4.5 0-2.48-2.015-4.5-4.5-4.5-2.48 0-4.5 2.014-4.5 4.5z"
+            fill-rule="evenodd" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="location">
+        <div class="city"></div>
+        <div class="date"></div>
+      </section>
+
+      <div class="current">
+        <div class="temp"><span></span></div>
+        <div class="weather"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
